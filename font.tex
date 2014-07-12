@@ -1,0 +1,28 @@
+% language and fonts
+\usepackage[english]{babel}
+
+% hyphenation 
+\usepackage{microtype}
+
+% consistent spacing between sentence
+\frenchspacing
+
+% sans font feature 
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+% allign the number 
+\defaultfontfeatures{Mapping=tex-text}
+
+% beamer uses sans-serif as default 
+\setsansfont
+[Ligatures=TeX, 
+UprightFont={* Narrow Book}, 
+ItalicFont={* Narrow Book Italic},
+BoldFont={* Narrow Medium},
+BoldItalicFont={* Narrow Medium Italic}]
+{Gotham}
+
+% monospace font
+\setmonofont{PragmataPro}

@@ -1,0 +1,69 @@
+%% main theme 
+\usetheme{default}
+
+% offical color 
+\definecolor{black}   {RGB} {0,0,0}
+\definecolor{white}   {RGB} {255,255,255}
+\definecolor{blue1}   {RGB} {0,0,128}
+\definecolor{blue2}   {RGB} {38,38,134}
+\definecolor{blue3}   {RGB} {51,51,178}
+
+% color 
+\setbeamercolor {title}          {fg=white, bg=blue1}
+\setbeamercolor {frametitle}     {fg=white, bg=blue1}
+\setbeamercolor {normal text}    {fg=black, bg=white} 
+\setbeamercolor {item}           {fg=blue1, bg=white} 
+%
+\setbeamercolor {section/foot}   {fg=white, bg=blue1}
+\setbeamercolor {institute/foot} {fg=white, bg=blue2}
+\setbeamercolor {date/foot}      {fg=white, bg=blue3}
+
+% font
+\setbeamerfont{title}      {family=\sffamily, series=\bfseries, size=\Large}
+\setbeamerfont{subtitle}   {family=\sffamily, series=\bfseries, size=\large}
+\setbeamerfont{author}     {series=\bfseries, size=\normalsize}
+\setbeamerfont{institute}  {size=\small}
+\setbeamerfont{date}       {size=\scriptsize}
+\setbeamerfont{frametitle} {family=\sffamily, series=\bfseries, size=\large}
+
+% available bullet option: ball, circle, square and default (triagle)
+\setbeamertemplate{items}[square]
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{itemize subsubitem}[triangle]
+
+% item margin like powerpoint
+\setlength{\leftmargini}{0pt}
+
+% rounded box and shadow 
+\setbeamertemplate{title page}[default][rounded=true, shadow=true]
+\setbeamertemplate{frametitle}[default][rounded=false,shadow=true,center]
+\setbeamertemplate{blocks}[rounded][shadow=true] 
+
+% turn off navigation symbol 
+\setbeamertemplate{navigation symbols}{} 
+
+% table of content 
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{section in toc}[square]
+
+% footline 
+\setbeamertemplate{footline}
+{
+	\leavevmode%
+  	\hbox{%
+  		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{section/foot}%
+  			\ifx\insertsection\empty
+      			\inserttitle
+      		\else
+				\insertsection
+   			\fi
+  		\end{beamercolorbox}%
+  		\begin{beamercolorbox}[wd=.50\paperwidth,ht=2.25ex,dp=1ex,center]{institute/foot}%
+			Gradue School of Nanoscience and Techonology (KAIST)
+  		\end{beamercolorbox}%
+  		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,right]{date/foot}%
+			\insertshortdate{}\hspace*{2em}
+    		\insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  		\end{beamercolorbox}}%
+	\vskip0pt%
+}

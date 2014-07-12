@@ -1,0 +1,16 @@
+% sub and superscript
+\newcommand{\textsb}[1]{\raisebox{-2pt}{\scriptsize#1}}
+\newcommand{\textsp}[1]{\raisebox{2pt}{\scriptsize#1}}
+
+% table heading
+\newcommand{\head}[1]{\textnormal{\textbf{#1}}}
+
+% skip n lines 
+\newcommand{\emptylines}[1]{\vspace*{#1\baselineskip}}
+
+% reference 
+\DeclareRobustCommand{\pub}[5]{\scriptsize #1 et al. \textit{#2} \textbf{#3}, \textit{#4}, #5}
+
+% zenburn code_listing 
+\newcommand{\pmt}[1]{{\small \texttt{#1}}}
+\newcommand{\cmd}[1]{\colorbox{black}{\scriptsize \texttt{#1}}}

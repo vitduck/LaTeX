@@ -1,0 +1,39 @@
+\documentclass[t,10pt]{beamer}
+
+\input{font}
+\input{graphic}
+\input{table}
+\input{command}
+\input{minted}
+\input{math}
+\input{official}
+
+\title{Decoration}
+\subtitle{Decorative}
+\author{Decorator}
+\institute[GSTNT]{Graduate School of Nanoscience and Techonology (KAIST)}
+
+\begin{document}
+%%%%%%%%%%%%
+% TITLE PAGE  
+%%%%%%%%%%%%
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+%%%%%
+% TOC 
+%%%%%
+\AtBeginSection[] 
+{ 
+	\begin{frame} 
+		\frametitle{Outline}
+		\tableofcontents[currentsection]
+	\end{frame} 
+}
+
+%%%%%%%%%
+% SECTION
+%%%%%%%%%
+
+\end{document}
