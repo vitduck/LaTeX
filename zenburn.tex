@@ -7,6 +7,7 @@
 \definecolor{black3}  {RGB} {53,53,53}
 \definecolor{gray}    {RGB} {63,63,63}
 \definecolor{white}   {RGB} {220,220,204}
+\definecolor{white2}  {RGB} {198,198,198}
 \definecolor{cyan}    {RGB} {140,208,211}
 \definecolor{blue}    {RGB} {148,191,243}
 \definecolor{red}     {RGB} {204,147,147} 
@@ -14,6 +15,7 @@
 \definecolor{magenta} {RGB} {237,139,183}
 \definecolor{purple}  {RGB} {192,190,209}
 \definecolor{yellow}  {RGB} {240,223,175}
+\definecolor{brown}   {RGB} {255,207,175}
 
 % background color
 \beamertemplateshadingbackground{gray}{gray}
@@ -29,14 +31,16 @@
 \setbeamercolor {institute/foot} {fg=white, bg=black2}
 \setbeamercolor {date/foot}      {fg=white, bg=black3}
 
+\setbeamercolor {date}           {fg=white2}
+
 % font
 \setbeamerfont{title}          {family=\sffamily, series=\bfseries, size=\Large}
 \setbeamerfont{subtitle}       {family=\sffamily, series=\bfseries, size=\large}
 \setbeamerfont{author}         {series=\bfseries, size=\normalsize}
 \setbeamerfont{institute}      {size=\small}
-\setbeamerfont{date}           {size=\scriptsize}
+\setbeamerfont{date}           {size=\scriptsize} 
 \setbeamerfont{frametitle}     {family=\sffamily, series=\bfseries, size=\Large}
-\setbeamerfont{section in toc} {series=\bfseries, size=\normalsize}
+\setbeamerfont{section in toc} {series=\bfseries, size=\large}
 
 
 % available bullet option: ball, circle, square and default (triagle)
@@ -45,7 +49,7 @@
 \setbeamertemplate{itemize subsubitem}[circle]
 
 % bullet margin like powerpoint
-%\setlength{\leftmargini}{0pt}
+\setlength{\leftmargini}{0pt}
 
 % rounded box and shadow
 \setbeamertemplate{title page}[default][rounded=true, shadow=true]
@@ -56,8 +60,9 @@
 \setbeamertemplate{navigation symbols}{} 
 
 % table of content 
+\setbeamercolor{section in toc}{fg=brown}
 \setbeamertemplate{section in toc}[sections numbered]
-\setbeamertemplate{section in toc}[square]
+\setbeamertemplate{subsection in toc}[sections numbered]
 
 % footline 
 \setbeamertemplate{footline}
@@ -65,7 +70,7 @@
 	\leavevmode%
   	\hbox {%
   		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{section/foot}%
-            \inserttitle
+            Management of Disk Usage
   		\end{beamercolorbox}%
   		\begin{beamercolorbox}[wd=.50\paperwidth,ht=2.25ex,dp=1ex,center]{institute/foot}%
 			Gradue School of Nanoscience and Techonology (KAIST)
