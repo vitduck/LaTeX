@@ -7,14 +7,20 @@
 
 % skip n lines 
 \newcommand{\emptylines}[1]{\vspace*{#1\baselineskip}}
+\newcommand{\ibreak}{\\ \vspace*{0.125\baselineskip}}
+\newcommand{\mbreak}{\\ \vspace*{0.333\baselineskip}}
+\newcommand{\sbreak}{\\ \vspace*{1.000\baselineskip}}
 
 % reference 
 \DeclareRobustCommand{\pub}[5]{\scriptsize #1 et al. \textit{#2} \textbf{#3}, \textit{#4}, #5}
 
-% zenburn code_listing 
-\newcommand{\pmt}[1]{{\small \texttt{#1}}}
-
 % linux syntax 
-\newcommand{\linux}[1]{\textcolor{brown}{\textbf{\small \texttt{#1}}}}
-\newcommand{\cmd}[1]{\textcolor{red}{\textbf{\small \texttt{#1}}}}
-\newcommand{\str}[1]{\textcolor{cyan}{\textbf{\small \texttt{#1}}}}
+\renewcommand{\path}[1]{\textcolor{orange}{\small \textbf{\texttt{#1}}}}
+\newcommand{\cmd}   [1]{\textcolor{brown} {\small \textbf{\texttt{#1}}}}
+\newcommand{\str}   [1]{\textcolor{red}   {\small \textbf{\texttt{#1}}}}
+\newcommand{\num}   [1]{\textcolor{cyan}  {\small \textbf{\texttt{#1}}}}
+\renewcommand{\url} [1]{\textcolor{purple}{\small \textbf{\texttt{#1}}}}
+\newcommand{\pmp}   [1]{\textcolor{white} {\small \texttt{#1}}}
+\newcommand{\hli}   [1]{\textcolor{blue}  {\textbf{#1}}}
+\newcommand{\exam}  [1]{\textcolor{blue}  {\textbf{Example \texttt{\small #1}}}}
+\newcommand{\step}  [1]{\textcolor{blue}  {\textbf{Step \texttt{\small #1}}}}
